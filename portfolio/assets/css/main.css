@@ -2859,6 +2859,31 @@ input, select, textarea {
 
 		}
 
+	/* Make tiles feel clickable */
+		.features .tile-btn {
+			background: transparent; border: 0; text-align: inherit; padding: 0; width: 100%;
+			cursor: pointer;
+		}
+		.features .tile-btn:focus-visible { outline: 2px solid rgba(99,102,241,.7); border-radius: 12px; }
+		.features li:hover .icon { transform: scale(1.05); transition: transform .2s ease; }
+		
+		/* Modal */
+		.proj-modal {
+			position: fixed; inset: 0; display: none; align-items: center; justify-content: center;
+			background: rgba(0,0,0,.5); z-index: 9999; padding: 1rem;
+		}
+		.proj-modal.is-open { display: flex; }
+		.proj-modal__dialog {
+			width: min(560px, 100%); background: #fff; color: #333; border-radius: 14px;
+			padding: 1.25rem 1.25rem 1rem; box-shadow: 0 20px 50px rgba(0,0,0,.25);
+		}
+		.proj-modal__close {
+			position: absolute; right: 1.25rem; top: 1rem; font-size: 1.6rem;
+			background: none; border: 0; cursor: pointer; color: #777;
+		}
+		.proj-modal__title { margin: .1rem 0 .5rem; font-size: 1.35rem; }
+		.proj-modal__actions { margin-top: .8rem; }
+
 /* Statistics */
 
 	.statistics {
