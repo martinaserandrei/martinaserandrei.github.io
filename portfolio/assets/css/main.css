@@ -2900,8 +2900,8 @@ input, select, textarea {
 		}
 		.proj-modal__close {
 			position: absolute;
-			top: 0.75rem;
-			right: 0.75rem;
+			top: 0.25rem;
+			right: 0.25rem;
 			font-size: 1.25rem;     /* adjust size of the “x” */
 			font-weight: 400;
 			background: none;
