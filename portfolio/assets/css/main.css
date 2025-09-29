@@ -2858,7 +2858,27 @@ input, select, textarea {
 					}
 
 		}
-
+	
+	/* Reset Stellar's global button styles for project tiles */
+	.features .tile-btn {
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		background: none !important;
+		border: 0;
+		box-shadow: none !important;
+		height: auto;
+		min-width: 0;
+		line-height: inherit;
+		text-align: inherit;
+		cursor: pointer;
+		border-radius: 0;
+	}
+  
+  /* Optional: hover affordance */
+  .features li:hover .icon { transform: scale(1.05); transition: transform .2s ease; }
+  .features .tile-btn:focus-visible { outline: 2px solid rgba(99,102,241,.7); border-radius: 12px; }
 	/* Make tiles feel clickable */
 		.features .tile-btn {
 			background: transparent; border: 0; text-align: inherit; padding: 0; width: 100%;
