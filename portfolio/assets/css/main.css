@@ -2902,7 +2902,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0.25rem;
 			right: 0.25rem;
-			font-size: 1.25rem;     /* adjust size of the “x” */
+			font-size: 1.25rem;
 			font-weight: 400;
 			background: none;
 			border: none;
@@ -2911,10 +2911,14 @@ input, select, textarea {
 			cursor: pointer;
 			color: #666;
 			line-height: 1;
+		  
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
 		  }
 		  
 		  .proj-modal__close:hover {
-			color: #000;            /* darker on hover */
+			color: #000;
 		  }
 		.proj-modal__title { margin: .1rem 0 .5rem; font-size: 1.35rem; }
 		.proj-modal__actions { margin-top: .8rem; }
