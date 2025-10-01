@@ -2887,6 +2887,12 @@ input, select, textarea {
 		}
 		}
 	
+	.intro {
+		max-width: 700px;
+		margin: 0 auto 2em; /* center + spacing below */
+		text-align: center;
+		}
+
 	/* Reset Stellar's global button styles for project tiles */
 	.features .tile-btn {
 		display: block;
