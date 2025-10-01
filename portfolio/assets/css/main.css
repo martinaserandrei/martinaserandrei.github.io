@@ -2794,7 +2794,7 @@ input, select, textarea {
 
 /* Features */
 
-	.features {
+	/*.features {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2857,6 +2857,34 @@ input, select, textarea {
 						margin-top: 2em;
 					}
 
+		}*/
+
+	.features {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 3em 2em; /* row gap (3em) and column gap (2em) */
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		}
+		
+		.features li {
+		margin: 0;
+		padding: 0;
+		}
+		
+		@media (max-width: 980px) {
+		.features {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+		}
+		
+		@media (max-width: 736px) {
+		.features {
+			grid-template-columns: 1fr;
+			gap: 2em;
+		}
 		}
 	
 	/* Reset Stellar's global button styles for project tiles */
